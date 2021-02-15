@@ -233,5 +233,5 @@ class ProbTest(TestCase):
         self.setN(4)
         expect = 1.33258
         result = _integrate(self.nominalT, self.nominalN, _f)
-        self.assertAlmostEqual(result, expect, 4)
+        self.assertAlmostEqual(result, expect, 3)
         
