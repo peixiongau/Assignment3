@@ -6,7 +6,7 @@ def test(x):
 highB = 20
 lowB = 0
 
-delta = 0.00001
+delta = 0.01
 oldResult = 0
 newResult = delta
 slices = 4
