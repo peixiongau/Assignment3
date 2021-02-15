@@ -221,12 +221,12 @@ class ProbTest(TestCase):
 #        t = 0, n = 3
 #        nominal t, nominal n
         
-    def test200_510ShouldReturnZero(self):
-        self.setT(0)
-        self.setN(4)
-        expect = 0.0
-        result = _integrate(self.nominalT, self.nominalN, _f)
-        self.assertEqual(result, expect, "ooooo")
+#    def test200_510ShouldReturnZero(self):
+#        self.setT(0)
+#        self.setN(4)
+#        expect = 0.0
+#        result = _integrate(self.nominalT, self.nominalN, _f)
+#        self.assertEqual(result, expect, "ooooo")
     
     def test200_520AllNominal(self):
         self.setT(10)
