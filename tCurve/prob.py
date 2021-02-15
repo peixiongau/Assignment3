@@ -109,4 +109,4 @@ def _f(u, n):
 #integrate(t, n, _f)
 def _integrate(t, n, _f):
     result = 0
-    pass
+    return result
