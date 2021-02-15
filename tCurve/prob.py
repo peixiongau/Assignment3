@@ -109,7 +109,7 @@ def _f(u, n):
 
 #integrate(t, n, _f)
 def _integrate(t, n, _f):
-    result = 0
+    
     slice = 4
     lowB = 0
     highB = t
@@ -129,4 +129,4 @@ def _integrate(t, n, _f):
     
     #result = 1.33258
         
-    return result
+    return newResult
