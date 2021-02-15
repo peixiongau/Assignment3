@@ -113,7 +113,7 @@ def _integrate(t, n, _f):
     slice = 4
     lowB = 0
     highB = t
-    delta = 0.001
+    delta = 0.0001
     step = (highB - lowB) / slice
     newResult = delta+1
     oldResult = 0
