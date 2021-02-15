@@ -231,7 +231,7 @@ class ProbTest(TestCase):
     def test200_010AllNominal(self):
         self.setT(10)
         self.setN(5)
-        expect = 1.31693
+        expect = 1.035485
         result = _integrate(self.nominalT, self.nominalN, _f)
         self.assertAlmostEqual(result, expect, 3)
     
