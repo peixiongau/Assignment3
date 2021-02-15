@@ -112,12 +112,20 @@ def _integrate(t, n, _f):
     result = 0
     slice = 4
     lowB = 0
-    highB = 0
-    delta = 0
-    newResult = 0
+    highB = t
+    delta = 0.000001
+    step = (highB - lowB) / slice
+    newResult = delta
     oldResult = 0
     while abs(newResult-oldResult) > delta:
         oldResult = newResult
+        newResult = 0
+        for i in range(lowB, slice, delta):
+            newResult += _f(lowB+i, n),
+        newResult *= (step/3)
+        
+        slice *= 2
+    
     result = 1.33258
         
     return result
