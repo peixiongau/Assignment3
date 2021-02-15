@@ -121,8 +121,8 @@ def _integrate(t, n, _f):
         oldResult = newResult
         step = (highB - lowB) / slices
         newResult = 0
-        for i in range(0, slices-2):
-            newResult += _f(lowB, n) + 4 * _f(lowB + step, n) + _f(lowB + 2*step, n)
+        for i in range(lowB, highB-2*slices, step):
+            newResult += _f(i, n) + 4 * _f(i + step, n) + _f(i + 2*step, n)
         newResult *= (step/3)
         
         slices *= 2
