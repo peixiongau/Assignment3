@@ -127,6 +127,6 @@ def _integrate(t, n, _f):
         
         slice *= 2
     
-    result = 1.33258
+    #result = 1.33258
         
     return result
