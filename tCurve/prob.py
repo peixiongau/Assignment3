@@ -1,5 +1,6 @@
 import math
 import platform
+from test.support import testresult
 
 
 # Outward facing method(s)
@@ -109,4 +110,14 @@ def _f(u, n):
 #integrate(t, n, _f)
 def _integrate(t, n, _f):
     result = 0
+    slice = 4
+    lowB = 0
+    highB = t
+    delta = 0
+    newResult = 0
+    oldResult = 0
+    while abs(newResult-oldResult) > delta:
+        oldResult = newResult
+    result = 1.
+        
     return result
